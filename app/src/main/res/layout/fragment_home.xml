@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="20"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/last_update_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textColor="#FFFFFF"
+                android:text="Updating"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <ListView
+                android:id="@+id/poll_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@drawable/gradientcolor"
+                android:dividerHeight="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingTop="19dp"
+                android:visibility="gone"
+                android:background="@drawable/listviewbg" /> <!-- Applying the new background -->
+
+
+            <TextView
+                android:id="@+id/empty_polls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="You don't have any polls yet..."
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Person One"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Person Two"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Person Three"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Person Four"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:backgroundTint="#F46536"
+
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textAlignment="center"
+                    android:text="VOTE" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Create Poll Text and Button -->
+    <RelativeLayout
+        android:id="@+id/create_poll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="120dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <!-- Create Poll Text -->
+        <TextView
+            android:id="@+id/create_poll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Poll"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="1dp" /> <!-- Added margin for space between text and button -->
+
+        <!-- Create Poll Button (Plus icon) -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/add_btn_icon"
+            android:id="@+id/create_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/create_poll_text"
+            android:layout_marginStart="10dp" /> <!-- Margin between text and button -->
+    </RelativeLayout>
+
+    <!-- Vote Now Text and Button -->
+    <RelativeLayout
+        android:id="@+id/vote_now_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <!-- Vote Now Text -->
+        <TextView
+            android:id="@+id/vote_now_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vote Now"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="3dp" /> <!-- Added margin for space between text and button -->
+
+        <!-- Vote Button -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vote_btn_layout_homefragment"
+            android:id="@+id/vote_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/vote_now_text"
+            android:layout_marginStart="10dp" /> <!-- Margin between text and button -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.easyvote.DataBaseFragment">
+
+    <!-- Employee Name Field -->
+    <EditText
+        android:id="@+id/employee_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Voter Name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <!-- Employee Phone Field -->
+    <EditText
+        android:id="@+id/employee_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_name"
+        android:layout_margin="10dp"
+        android:hint="Enter Voter phone number"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <!-- Employee Address Field -->
+    <EditText
+        android:id="@+id/employee_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_phone_number"
+        android:layout_margin="10dp"
+        android:hint="Enter voter address"
+        android:inputType="textPostalAddress" />
+
+    <!-- Add Button -->
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_address"
+        android:layout_margin="10dp"
+        android:backgroundTint="#4BB33A"
+        android:text="Add Voeter details"
+        android:textAllCaps="false"
+        android:textSize="19dp"
+
+
+        />
+
+    <!-- Update Button -->
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_button"
+        android:layout_margin="5dp"
+        android:backgroundTint="#4BB33A"
+        android:textSize="19dp"
+
+        android:text="Update voter details"
+        android:textAllCaps="false" />
+
+    <!-- Delete Button -->
+    <Button
+        android:backgroundTint="#4BB33A"
+android:textStyle="bold"
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_button"
+        android:layout_margin="5dp"
+        android:textSize="19dp"
+        android:text="Delete voter"
+        android:textAllCaps="false" />
+
+    <!-- Read Button (for viewing data) -->
+    <Button
+        android:backgroundTint="#4BB33A"
+android:textColor="#EEF2F2"
+        android:id="@+id/read_button"
+        android:textSize="19dp"
+android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_button"
+        android:layout_margin="5dp"
+        android:text="Read voter"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

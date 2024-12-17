@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".VotingPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:text="Loading...."
+            android:textStyle="bold"
+
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="15dp"/>
+        <RadioGroup
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group"
+            android:onClick="RadioButtonClicked">
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="50dp">
+
+            <View
+                android:id="@+id/votebtn"
+                android:layout_width="56dp"
+                android:layout_height="70dp"
+                android:background="@drawable/vote"
+                android:backgroundTint="@color/sky3" />
+
+            <TextView
+                android:id="@+id/voteText"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="Click to Vote!"
+                android:background="@color/sky2"
+                android:backgroundTint="@color/sky2"
+                android:textColor="@color/design_default_color_primary"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

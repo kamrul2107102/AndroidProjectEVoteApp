@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PollResultsAdmin"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/poll_admin_toolbar"
+        app:menu="@menu/delete_toolbar"
+        android:background="@drawable/gradientcolor"
+        app:title="Results"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/back_arrow_icon"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show poll"
+        android:gravity="right"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:id="@+id/show_poll_switch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:id="@+id/description"
+            android:padding="10dp"
+            android:text="Description"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </androidx.core.widget.NestedScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/option_list"
+        android:layout_weight="7"
+        android:padding="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10sp" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:id="@+id/scrollViewNested"
+        android:paddingBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Zero Votes..."
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:padding="10dp"
+                android:id="@+id/empty_votes_text"
+                android:visibility="gone"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/progress_bar"
+            android:progressTint="#8B31E4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textSize="21sp"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/title1"
+                android:padding="10dp"/>
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/pie_chart"
+            android:visibility="gone" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voters Ages"
+                android:textSize="21sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/title2"
+                android:padding="10dp"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/bar_chart" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

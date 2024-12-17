@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share with UID"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp" />
+        <!-- Message -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/cancel_asset"
+            android:id="@+id/cancel_share_dialog"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingTop="40dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Enter UID"
+            android:id="@+id/UID"/>
+
+        <!-- Share Link Button -->
+        <Button
+            android:id="@+id/share_id_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Share to user"
+            android:padding="10dp"
+            android:backgroundTint="@color/theme"
+            android:layout_weight="3"/>
+
+
+
+    </LinearLayout>
+    <!-- Share ID Button -->
+    <Button
+        android:id="@+id/share_link_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Link"
+        android:padding="10dp"
+        android:paddingTop="20dp"
+        android:backgroundTint="@color/poll_list_color" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/share_dialog_progress_bar"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/result_massage"
+        android:visibility="gone"/>
+
+</LinearLayout>

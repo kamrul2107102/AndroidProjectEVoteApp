@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88190577437",
+    "project_id": "evotapp-703f6",
+    "storage_bucket": "evotapp-703f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88190577437:android:8d649ea9e22b5fbac58ff4",
+        "android_client_info": {
+          "package_name": "com.example.easyvote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdM0s99G692-dHYHQRl4QXhxumOxlsZyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

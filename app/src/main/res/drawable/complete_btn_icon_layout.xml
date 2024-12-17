@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Circular background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/poll_list_color" />
+            <corners android:radius="360dp" />
+        </shape>
+    </item>
+    <!-- Add icon in the center -->
+    <item android:drawable="@drawable/tick_icon"
+        android:gravity="center"/>
+</layer-list>

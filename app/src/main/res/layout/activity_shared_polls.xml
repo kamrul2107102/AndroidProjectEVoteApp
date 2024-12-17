@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharedPolls"
+    android:weightSum="20"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Shared Poll"
+        android:gravity="center"
+        android:background="@drawable/gradientcolor"
+        app:titleTextColor="@color/black"
+
+        app:navigationIcon="@drawable/back_arrow_icon"
+        android:id="@+id/shared_poll_toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You Don't have any Polls yet..."
+        android:id="@+id/empty_new_pollsText"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_shared_poll_list"
+        android:paddingBottom="10dp"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:padding="10dp"/>
+
+
+</LinearLayout>
