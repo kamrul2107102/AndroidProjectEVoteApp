@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EasyVote" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/material_dynamic_tertiary70</item>
+        <item name="android:statusBarColor">@color/sky</item>
+        <item name="android:navigationBarColor">@color/theme</item>
+        <item name="tabSelectedTextColor">@color/poll_list_color</item>
+        <item name="colorAccent">@color/theme</item>
+
+
+
+    </style>
+
+
+    <style name="Theme.EasyVote" parent="Base.Theme.EasyVote" />
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Register Now"
+        android:gravity="center_horizontal"
+        app:titleTextColor="@color/design_default_color_primary_variant"
+        android:background="@drawable/gradientcolor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+    
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:hint="User Name"
+        android:padding="19dp"
+        android:paddingTop="100dp"
+        android:textColorHint="#a0a0a0" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Birthday"
+        android:textSize="19sp"
+        android:text="Birthday"
+        android:textColor="#a0a0a0"
+        android:padding="19dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:padding="19dp"
+        android:textSize="19sp"
+        android:textColor="#a0a0a0"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/rGroup">
+
+        <RadioButton android:id="@+id/male"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#a0a0a0"
+            android:checked="true"/>
+        <RadioButton android:id="@+id/female"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#a0a0a0"/>
+    </RadioGroup>
+
+    <EditText
+
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="emailAddress"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="21dp"
+        android:textColorHint="#a0a0a0" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="23dp"
+        android:textColorHint="#a0a0a0" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="#a0a0a0" />
+
+    <Button
+
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/poll_list_color"
+        android:padding="10dp"
+        android:text="Register"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:id="@+id/pbar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

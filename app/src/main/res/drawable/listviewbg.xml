@@ -1,0 +1,18 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient Background -->
+    <gradient
+        android:startColor="#FF7F50"
+    android:endColor="#FF6347"
+    android:angle="45" />
+
+    <!-- Rounded Corners -->
+    <corners android:radius="10dp" /> <!-- Rounded corners with 10dp radius -->
+
+    <!-- Shadow -->
+    <solid android:color="#F7FFFFFF" />
+    <padding
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp" />
+</shape>

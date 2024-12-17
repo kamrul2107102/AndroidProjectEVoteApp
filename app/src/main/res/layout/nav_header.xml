@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="bottom"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/navigationimage"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textColor="#00ff00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/Unameheader" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID "
+        android:id="@+id/userID"
+        android:background="@color/homefragment_background"
+        android:textColor="#0000ff"/>
+
+</LinearLayout>
+

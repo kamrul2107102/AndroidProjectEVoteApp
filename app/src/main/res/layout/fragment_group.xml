@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupFragment"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:weightSum="20"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="top"
+        android:weightSum="20">
+
+
+        <ListView
+            android:id="@+id/group_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:divider="@null"
+            android:dividerHeight="10dp"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="You Don't have Any Groups yet... "
+            android:id="@+id/emptt_groups"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:gravity="center"
+
+            android:padding="30dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_btn_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/create_group"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="120dp"/>
+
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/join_group_btn"
+        android:layout_below="@id/create_group"
+        android:id="@+id/join_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-100dp"/>
+
+
+</RelativeLayout>

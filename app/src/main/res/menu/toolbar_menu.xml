@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Leave"
+        android:icon="@drawable/logout"
+        android:id="@+id/group_participant_action"
+        />
+    <item
+        android:title="Share"
+        android:icon="@drawable/share"
+        android:id="@+id/share_group_id"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:title="delete"
+            android:icon="@drawable/delete"
+            android:id="@+id/delete_poll"
+            app:showAsAction="ifRoom"
+            android:iconTint="@color/white"/>
+        <item
+            android:title="close"
+            android:icon="@drawable/close"
+            android:id="@+id/close_poll"
+            app:showAsAction="ifRoom"/>
+        <item
+                android:title="share"
+                android:icon="@drawable/share"
+                android:id="@+id/share_poll"
+                app:showAsAction="ifRoom"
+                android:iconTint="@color/white"/>
+
+</menu>

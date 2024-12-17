@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="sky">#2196F3</color>
+    <color name="sky2">#DAA3D4F2</color>
+    <color name="sky3">#2439E0</color>
+
+        <color name="blue">#0000FF</color> <!-- Example of blue color -->
+
+
+    <color name="theme">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="homefragment_background">#1E3350</color>
+    <color name="poll_list_color">#26AF2B</color>
+<color name="red">#A21D0B</color>
+</resources>
