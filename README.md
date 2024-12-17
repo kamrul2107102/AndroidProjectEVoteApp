@@ -2,8 +2,6 @@
 
 This is a simple e-vote app that integrates Firebase Authentication, Firebase Realtime Database, and JSON parsing to manage user login, registration, and vote storage.
 
-Special thanks to the [EasyVote Android App](https://github.com/Dilan012/EasyVote-Android-App/blob/master/build.gradle) for the inspiration and guidance on building this app.
-
 ## Features
 
 - **Firebase Authentication**: Secure user login and registration system using Firebase.
